@@ -34,9 +34,9 @@
                     jcr:title="Content Image"
                     sling:resourceType="wcm/core/components/policy/policy"
                     allowedRenditionWidths="[320,480,600,800,1024,1200,1600]"
-                    disableLazyLoading="false"
                     allowUpload="false"
                     altValueFromDAM="true"
+                    disableLazyLoading="false"
                     displayPopupTitle="true"
                     isDecorative="false"
                     jpegQuality="{Long}85"
@@ -353,9 +353,23 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     clientlibs="[wknd-spa-react.react]"
                     isRoot="{Boolean}true"
-                    structureDepth="3"
-                />
+                    structureDepth="3"/>
             </spa>
+            <navigation jcr:primaryType="nt:unstructured">
+                <policy_1621296550696
+                    jcr:lastModified="{Date}2021-05-17T17:09:32.424-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND Navigation"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    collectAllPages="true"
+                    disableShadowing="false"
+                    navigationRoot="/content/wknd-spa-react/us/en/home"
+                    structureDepth="1"
+                    structureStart="0">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1621296550696>
+            </navigation>
         </components>
     </wknd-spa-react>
     <wcm jcr:primaryType="nt:unstructured">
@@ -364,13 +378,15 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
+                        jcr:lastModified="{Date}2021-05-17T17:08:44.530-07:00"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/text]">
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/text,group:WKND SPA React - Structure]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
-                    </responsivegrid>
+                </responsivegrid>
             </components>
         </foundation>
     </wcm>
