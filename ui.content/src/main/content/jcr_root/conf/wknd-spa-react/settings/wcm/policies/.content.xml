@@ -370,6 +370,20 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                 </policy_1621296550696>
             </navigation>
+            <carousel jcr:primaryType="nt:unstructured">
+                <policy_1621385618404
+                    jcr:lastModified="{Date}2021-05-18T17:54:06.776-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="WKND Carousel"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    autopauseDisabled="false"
+                    autoplay="false"
+                    components="[/apps/wknd-spa-react/components/image,/apps/wknd-spa-react/components/teaser,/apps/wknd-spa-react/components/text,/apps/wknd-spa-react/components/title]"
+                    delay="5000">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                </policy_1621385618404>
+            </carousel>
         </components>
     </wknd-spa-react>
     <wcm jcr:primaryType="nt:unstructured">
@@ -378,14 +392,24 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <spa-default
                         jcr:description="Includes only SPA-Enabled components."
-                        jcr:lastModified="{Date}2021-05-17T17:08:44.530-07:00"
+                        jcr:lastModified="{Date}2021-05-18T17:52:52.599-07:00"
                         jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="SPA Content"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/text,group:WKND SPA React - Structure]">
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/carousel,/apps/wknd-spa-react/components/image,/apps/wknd-spa-react/components/list,/apps/wknd-spa-react/components/tabs,/apps/wknd-spa-react/components/teaser,/apps/wknd-spa-react/components/text,/apps/wknd-spa-react/components/title]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </spa-default>
+                    <policy_1621385482568
+                        jcr:description="Includes only SPA-Enabled components."
+                        jcr:lastModified="{Date}2021-05-18T17:52:01.165-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="SPA Structure"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/libs/wcm/foundation/components/responsivegrid,/apps/wknd-spa-react/components/text,/apps/wknd-spa-react/components/title,group:WKND SPA React - Structure]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1621385482568>
                 </responsivegrid>
             </components>
         </foundation>

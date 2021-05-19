@@ -18,6 +18,7 @@ import './Page/Page';
 import './Text/Text';
 import './Container/Container';
 import './ExperienceFragment/ExperienceFragment';
+import './Header/Header';
 
 import {MapTo} from '@adobe/aem-react-editable-components';
 

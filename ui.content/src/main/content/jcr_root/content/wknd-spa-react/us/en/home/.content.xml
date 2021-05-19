@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2018-10-04T09:50:29.650+02:00"
+        cq:lastModified="{Date}2021-05-18T17:59:08.948-07:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/wknd-spa-react/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -21,6 +21,73 @@
                     textIsRich="true">
                     <cq:responsive jcr:primaryType="nt:unstructured"/>
                 </text>
+                <image
+                    jcr:created="{Date}2021-05-18T17:53:08.453-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-18T17:53:11.310-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-spa-react/components/image"
+                    fileReference="/content/dam/wknd/en/magazine/fly-fishing-amazon/milkyway-amazon.JPG">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="0"
+                            width="4"/>
+                    </cq:responsive>
+                </image>
+                <carousel
+                    jcr:created="{Date}2021-05-18T17:56:19.621-07:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-05-18T17:57:04.916-07:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="wknd-spa-react/components/carousel"
+                    autopauseDisabled="false"
+                    autoplay="false"
+                    delay="5000">
+                    <image
+                        cq:panelTitle="Image 1"
+                        jcr:created="{Date}2021-05-18T17:56:28.109-07:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-05-18T17:56:32.259-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="wknd-spa-react/components/image"
+                        fileReference="/content/dam/wknd/en/activities/climbing/sport-climbing.jpg"/>
+                    <item_1621385805907
+                        cq:panelTitle="New teaser"
+                        jcr:description="&lt;p>tet&lt;/p>&#xd;&#xa;"
+                        jcr:lastModified="{Date}2021-05-18T17:57:37.295-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="What up"
+                        sling:resourceType="wknd-spa-react/components/teaser"
+                        actionsEnabled="false"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/magazine/skitouring/Skitouring8Sjoeberg.JPG"
+                        textIsRich="true"
+                        titleFromPage="false"/>
+                    <item_1621385812584
+                        cq:panelTitle="second teaser"
+                        jcr:lastModified="{Date}2021-05-18T17:59:08.941-07:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="hello"
+                        sling:resourceType="wknd-spa-react/components/teaser"
+                        actionsEnabled="true"
+                        descriptionFromPage="false"
+                        fileReference="/content/dam/wknd/en/activities/hiking/hiker-anapurna.jpg"
+                        textIsRich="true"
+                        titleFromPage="false">
+                        <actions jcr:primaryType="nt:unstructured">
+                            <item0
+                                jcr:primaryType="nt:unstructured"
+                                link="/content/wknd-spa-react/us/en/home/page-1"
+                                text="Read More"/>
+                        </actions>
+                    </item_1621385812584>
+                </carousel>
             </responsivegrid>
         </root>
     </jcr:content>
